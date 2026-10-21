@@ -1,1 +1,95 @@
-[]
+[
+  {
+    "id": "nour-sofa",
+    "slug": "nour-sofa",
+    "name": { "ar": "كنبة نور", "en": "Nour Sofa" },
+    "category": "seating",
+    "shortDescription": { "ar": "كنبة L بقماش رمادي وأرجل خشب بلوط.", "en": "L-shape sofa in grey fabric with oak legs." },
+    "description": { "ar": "تصميم مريح بخطوط نظيفة، مناسب لغرف المعيشة الصغيرة والكبيرة. القماش سهل التنظيف والأرجل من خشب البلوط الطبيعي.", "en": "A comfortable design with clean lines, suited to small and large living rooms. Easy-clean fabric and natural oak legs." },
+    "year": 2024,
+    "featured": true,
+    "dimensions": { "widthCm": 260, "heightCm": 85, "depthCm": 160, "weightKg": 48 },
+    "materials": [
+      { "id": "grey-fabric", "name": { "ar": "قماش رمادي", "en": "Grey fabric" }, "swatchImage": "/images/products/swatches/grey-fabric.webp" },
+      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.webp" }
+    ],
+    "images": ["/images/products/nour-sofa-1.webp", "/images/products/nour-sofa-2.webp"]
+  },
+  {
+    "id": "olive-dining-table",
+    "slug": "olive-dining-table",
+    "name": { "ar": "طاولة طعام الزيتون", "en": "Olive Dining Table" },
+    "category": "tables",
+    "shortDescription": { "ar": "طاولة لستة أشخاص من خشب الزيتون.", "en": "Six-seat dining table in olive wood." },
+    "description": { "ar": "قطعة واحدة من خشب الزيتون، بألوان طبيعية وعروق مميزة لكل قطعة.", "en": "Solid olive wood with natural tones and unique grain in every piece." },
+    "year": 2024,
+    "featured": true,
+    "dimensions": { "widthCm": 180, "heightCm": 76, "depthCm": 90, "weightKg": 65 },
+    "materials": [
+      { "id": "olive-wood", "name": { "ar": "خشب الزيتون", "en": "Olive wood" }, "swatchImage": "/images/products/swatches/olive-wood.webp" }
+    ],
+    "images": ["/images/products/olive-dining-table-1.webp", "/images/products/olive-dining-table-2.webp"]
+  },
+  {
+    "id": "two-door-wardrobe",
+    "slug": "two-door-wardrobe",
+    "name": { "ar": "خزانة ملابس بابين", "en": "Two-door Wardrobe" },
+    "category": "storage",
+    "shortDescription": { "ar": "خزانة MDF أبيض بمقابض ذهبية.", "en": "White MDF wardrobe with brass handles." },
+    "description": { "ar": "خزانة بتصميم هادئ وأبواب مستوية، مع مقابض نحاسية تضيف لمسة دافئة.", "en": "A quiet design with flat doors and warm brass handles." },
+    "year": 2025,
+    "featured": false,
+    "dimensions": { "widthCm": 120, "heightCm": 200, "depthCm": 55 },
+    "materials": [
+      { "id": "white-mdf", "name": { "ar": "MDF أبيض", "en": "White MDF" }, "swatchImage": "/images/products/swatches/white-mdf.webp" },
+      { "id": "brass", "name": { "ar": "نحاس", "en": "Brass" }, "swatchImage": "/images/products/swatches/brass.webp" }
+    ],
+    "images": ["/images/products/two-door-wardrobe-1.webp", "/images/products/two-door-wardrobe-2.webp"]
+  },
+  {
+    "id": "minimal-pine-bed",
+    "slug": "minimal-pine-bed",
+    "name": { "ar": "سرير صنوبر مينيمال", "en": "Minimal Pine Bed" },
+    "category": "beds",
+    "shortDescription": { "ar": "سرير خشب صنوبر بتصميم بسيط.", "en": "Simple pine bed frame." },
+    "description": { "ar": "إطار سرير من خشب الصنوبر بخطوط مستقيمة، يناسب غرف النوم الهادئة.", "en": "A straight-lined pine frame suited to calm bedrooms." },
+    "year": 2025,
+    "featured": true,
+    "dimensions": { "widthCm": 160, "heightCm": 95, "depthCm": 205, "weightKg": 40 },
+    "materials": [
+      { "id": "pine", "name": { "ar": "خشب الصنوبر", "en": "Pine" }, "swatchImage": "/images/products/swatches/pine.webp" }
+    ],
+    "images": ["/images/products/minimal-pine-bed-1.webp", "/images/products/minimal-pine-bed-2.webp"]
+  },
+  {
+    "id": "corner-desk",
+    "slug": "corner-desk",
+    "name": { "ar": "مكتب زاوية", "en": "Corner Desk" },
+    "category": "tables",
+    "shortDescription": { "ar": "مكتب زاوية من خشب البلوط.", "en": "Oak corner desk." },
+    "description": { "ar": "سطح عمل واسع في زاوية الغرفة، مع مساحة تخزين مدمجة.", "en": "A wide work surface in a room corner, with built-in storage." },
+    "year": 2026,
+    "featured": false,
+    "dimensions": { "widthCm": 150, "heightCm": 75, "depthCm": 150, "weightKg": 38 },
+    "materials": [
+      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.webp" }
+    ],
+    "images": ["/images/products/corner-desk-1.webp", "/images/products/corner-desk-2.webp"]
+  },
+  {
+    "id": "wall-tv-unit",
+    "slug": "wall-tv-unit",
+    "name": { "ar": "ركنة تلفزيون معلقة", "en": "Wall-mounted TV Unit" },
+    "category": "storage",
+    "shortDescription": { "ar": "ركنة تلفزيون معلقة من الألومنيوم والخشب.", "en": "Wall-mounted TV unit in aluminum and wood." },
+    "description": { "ar": "وحدة معلقة تجمع بين إطار الألومنيوم النحيف ورفوف خشبية دافئة.", "en": "A floating unit combining a slim aluminum frame with warm wooden shelves." },
+    "year": 2026,
+    "featured": false,
+    "dimensions": { "widthCm": 220, "heightCm": 45, "depthCm": 40, "weightKg": 22 },
+    "materials": [
+      { "id": "aluminum", "name": { "ar": "ألومنيوم", "en": "Aluminum" }, "swatchImage": "/images/products/swatches/aluminum.webp" },
+      { "id": "wood", "name": { "ar": "خشب", "en": "Wood" }, "swatchImage": "/images/products/swatches/wood.webp" }
+    ],
+    "images": ["/images/products/wall-tv-unit-1.webp", "/images/products/wall-tv-unit-2.webp"]
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "title": { "ar": "عني", "en": "About" },
+  "story": {
+    "ar": "نص placeholder: هنا تكتب قصتك كمصممة ومطورة، وكيف بدأ اهتمامك بالأثاث والتصميم.",
+    "en": "Placeholder: write your story here as a designer and developer, and how your interest in furniture began."
+  },
+  "process": {
+    "ar": "نص placeholder: اشرح مراحل عملك، من الفكرة إلى التنفيذ.",
+    "en": "Placeholder: describe your process, from the idea to the finished piece."
+  }
+}

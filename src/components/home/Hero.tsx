@@ -6,7 +6,7 @@ export default function Hero({ locale, dict }: { locale: Locale; dict: Record<st
   return (
     <section className="relative flex min-h-[70vh] items-end overflow-hidden">
       <Image
-        src="/images/hero.webp"
+        src="/images/hero.jpg"
         alt=""
         fill
         priority

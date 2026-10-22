@@ -15,6 +15,6 @@ export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } =
   useNativeEsbuild: true,
   globDirectory: '.',
   // App shell JS/CSS/fonts from the build output, plus public images and manifest.
-  globPatterns: ['public/**/*.{png,webp,json}', '.next/static/**/*.{js,css,woff2}'],
+  globPatterns: ['public/**/*.{png,jpg,webp,json}', '.next/static/**/*.{js,css,woff2}'],
   additionalPrecacheEntries: pageUrls.map((url) => ({ url, revision: null })),
 });

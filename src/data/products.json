@@ -10,10 +10,10 @@
     "featured": true,
     "dimensions": { "widthCm": 260, "heightCm": 85, "depthCm": 160, "weightKg": 48 },
     "materials": [
-      { "id": "grey-fabric", "name": { "ar": "قماش رمادي", "en": "Grey fabric" }, "swatchImage": "/images/products/swatches/grey-fabric.webp" },
-      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.webp" }
+      { "id": "grey-fabric", "name": { "ar": "قماش رمادي", "en": "Grey fabric" }, "swatchImage": "/images/products/swatches/grey-fabric.jpg" },
+      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.jpg" }
     ],
-    "images": ["/images/products/nour-sofa-1.webp", "/images/products/nour-sofa-2.webp"]
+    "images": ["/images/products/nour-sofa-1.jpg", "/images/products/nour-sofa-2.jpg"]
   },
   {
     "id": "olive-dining-table",
@@ -26,9 +26,9 @@
     "featured": true,
     "dimensions": { "widthCm": 180, "heightCm": 76, "depthCm": 90, "weightKg": 65 },
     "materials": [
-      { "id": "olive-wood", "name": { "ar": "خشب الزيتون", "en": "Olive wood" }, "swatchImage": "/images/products/swatches/olive-wood.webp" }
+      { "id": "olive-wood", "name": { "ar": "خشب الزيتون", "en": "Olive wood" }, "swatchImage": "/images/products/swatches/olive-wood.jpg" }
     ],
-    "images": ["/images/products/olive-dining-table-1.webp", "/images/products/olive-dining-table-2.webp"]
+    "images": ["/images/products/olive-dining-table-1.jpg", "/images/products/olive-dining-table-2.jpg"]
   },
   {
     "id": "two-door-wardrobe",
@@ -41,10 +41,10 @@
     "featured": false,
     "dimensions": { "widthCm": 120, "heightCm": 200, "depthCm": 55 },
     "materials": [
-      { "id": "white-mdf", "name": { "ar": "MDF أبيض", "en": "White MDF" }, "swatchImage": "/images/products/swatches/white-mdf.webp" },
-      { "id": "brass", "name": { "ar": "نحاس", "en": "Brass" }, "swatchImage": "/images/products/swatches/brass.webp" }
+      { "id": "white-mdf", "name": { "ar": "MDF أبيض", "en": "White MDF" }, "swatchImage": "/images/products/swatches/white-mdf.jpg" },
+      { "id": "brass", "name": { "ar": "نحاس", "en": "Brass" }, "swatchImage": "/images/products/swatches/brass.jpg" }
     ],
-    "images": ["/images/products/two-door-wardrobe-1.webp", "/images/products/two-door-wardrobe-2.webp"]
+    "images": ["/images/products/two-door-wardrobe-1.jpg", "/images/products/two-door-wardrobe-2.jpg"]
   },
   {
     "id": "minimal-pine-bed",
@@ -57,9 +57,9 @@
     "featured": true,
     "dimensions": { "widthCm": 160, "heightCm": 95, "depthCm": 205, "weightKg": 40 },
     "materials": [
-      { "id": "pine", "name": { "ar": "خشب الصنوبر", "en": "Pine" }, "swatchImage": "/images/products/swatches/pine.webp" }
+      { "id": "pine", "name": { "ar": "خشب الصنوبر", "en": "Pine" }, "swatchImage": "/images/products/swatches/pine.jpg" }
     ],
-    "images": ["/images/products/minimal-pine-bed-1.webp", "/images/products/minimal-pine-bed-2.webp"]
+    "images": ["/images/products/minimal-pine-bed-1.jpg", "/images/products/minimal-pine-bed-2.jpg"]
   },
   {
     "id": "corner-desk",
@@ -72,9 +72,9 @@
     "featured": false,
     "dimensions": { "widthCm": 150, "heightCm": 75, "depthCm": 150, "weightKg": 38 },
     "materials": [
-      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.webp" }
+      { "id": "oak", "name": { "ar": "خشب البلوط", "en": "Oak" }, "swatchImage": "/images/products/swatches/oak.jpg" }
     ],
-    "images": ["/images/products/corner-desk-1.webp", "/images/products/corner-desk-2.webp"]
+    "images": ["/images/products/corner-desk-1.jpg", "/images/products/corner-desk-2.jpg"]
   },
   {
     "id": "wall-tv-unit",
@@ -87,9 +87,9 @@
     "featured": false,
     "dimensions": { "widthCm": 220, "heightCm": 45, "depthCm": 40, "weightKg": 22 },
     "materials": [
-      { "id": "aluminum", "name": { "ar": "ألومنيوم", "en": "Aluminum" }, "swatchImage": "/images/products/swatches/aluminum.webp" },
-      { "id": "wood", "name": { "ar": "خشب", "en": "Wood" }, "swatchImage": "/images/products/swatches/wood.webp" }
+      { "id": "aluminum", "name": { "ar": "ألومنيوم", "en": "Aluminum" }, "swatchImage": "/images/products/swatches/aluminum.jpg" },
+      { "id": "wood", "name": { "ar": "خشب", "en": "Wood" }, "swatchImage": "/images/products/swatches/wood.jpg" }
     ],
-    "images": ["/images/products/wall-tv-unit-1.webp", "/images/products/wall-tv-unit-2.webp"]
+    "images": ["/images/products/wall-tv-unit-1.jpg", "/images/products/wall-tv-unit-2.jpg"]
   }
 ]

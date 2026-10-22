@@ -1,4 +1,5 @@
 import type { NextConfig } from "next";
+import { withSerwist } from "@serwist/turbopack";
 
 const nextConfig: NextConfig = {
   /* config options here */
@@ -14,4 +15,5 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+// Serwist via Turbopack integration: Next 16 builds with Turbopack by default.
+export default withSerwist(nextConfig);

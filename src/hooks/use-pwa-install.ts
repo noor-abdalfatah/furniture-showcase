@@ -42,26 +42,30 @@ type BeforeInstallPromptEvent = Event & {
 };
 
 export function usePwaInstall() {
+  // Browser-only values are read lazily. The prompt stays hidden until user interaction,
+  // so server and client first renders match (both render nothing).
   const [deferred, setDeferred] = useState<BeforeInstallPromptEvent | null>(null);
-  const [isIos, setIsIos] = useState(false);
-  const [isStandalone, setIsStandalone] = useState(false);
-  const [dismissedAt, setDismissedAt] = useState<number | null>(null);
-  const [interacted, setInteracted] = useState(false);
-  const [visible, setVisible] = useState(false);
+  const [isIos] = useState(
+    () => typeof navigator !== 'undefined' && /iphone|ipad|ipod/i.test(navigator.userAgent),
+  );
+  const [isStandalone] = useState(
+    () =>
+      typeof window !== 'undefined' &&
+      (window.matchMedia('(display-mode: standalone)').matches ||
+        (navigator as Navigator & { standalone?: boolean }).standalone === true),
+  );
+  const [dismissedAt, setDismissedAt] = useState<number | null>(() =>
+    typeof window !== 'undefined' ? readDismissedAt() : null,
+  );
+  // Time is captured in the first user interaction (an event handler), never during render.
+  const [interactedAt, setInteractedAt] = useState<number | null>(null);
 
   useEffect(() => {
-    setIsStandalone(
-      window.matchMedia('(display-mode: standalone)').matches ||
-        (navigator as Navigator & { standalone?: boolean }).standalone === true,
-    );
-    setIsIos(/iphone|ipad|ipod/i.test(navigator.userAgent) && !('MSStream' in window));
-    setDismissedAt(readDismissedAt());
-
     const onBeforeInstall = (e: Event) => {
       e.preventDefault();
       setDeferred(e as BeforeInstallPromptEvent);
     };
-    const onInteract = () => setInteracted(true);
+    const onInteract = () => setInteractedAt(Date.now());
     window.addEventListener('beforeinstallprompt', onBeforeInstall);
     window.addEventListener('click', onInteract, { once: true });
     window.addEventListener('scroll', onInteract, { once: true, passive: true });
@@ -72,24 +76,22 @@ export function usePwaInstall() {
     };
   }, []);
 
-  useEffect(() => {
-    const canShow = (deferred !== null || isIos) && interacted;
-    setVisible(canShow && shouldShowInstallPrompt({ dismissedAt, now: Date.now(), isStandalone }));
-  }, [deferred, isIos, interacted, dismissedAt, isStandalone]);
+  const visible =
+    (deferred !== null || isIos) &&
+    interactedAt !== null &&
+    shouldShowInstallPrompt({ dismissedAt, now: interactedAt, isStandalone });
 
   const promptInstall = useCallback(async () => {
     if (!deferred) return;
     await deferred.prompt();
     await deferred.userChoice;
     setDeferred(null);
-    setVisible(false);
   }, [deferred]);
 
   const dismiss = useCallback(() => {
-    const now = Date.now();
-    writeDismissedAt(now);
-    setDismissedAt(now);
-    setVisible(false);
+    const at = Date.now();
+    writeDismissedAt(at);
+    setDismissedAt(at);
   }, []);
 
   return { canInstall: deferred !== null, isIos, visible, promptInstall, dismiss };

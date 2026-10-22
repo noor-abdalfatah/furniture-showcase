@@ -1,11 +1,11 @@
 {
   "title": { "ar": "عني", "en": "About" },
   "story": {
-    "ar": "نص placeholder: هنا تكتب قصتك كمصممة ومطورة، وكيف بدأ اهتمامك بالأثاث والتصميم.",
-    "en": "Placeholder: write your story here as a designer and developer, and how your interest in furniture began."
+    "ar": "أنا نور عبد الفتاح، أعمل في تطوير الواجهات الأمامية للويب، وخلفيتي في هندسة أنظمة الحاسوب من جامعة الأزهر. أهتم ببناء مواقع واضحة وسريعة وسهلة الاستخدام، وأجد في التصميم الهادئ للأثاث الحديث مصدر إلهام دائم لطريقة تنظيم المساحات والتفاصيل.",
+    "en": "I'm Noor Abdalfatah, a front-end web developer with a background in Computer Systems Engineering from Al-Azhar University. I build clear, fast, and easy-to-use websites, and I draw constant inspiration from the calm design of modern furniture, especially how it organizes space and detail."
   },
   "process": {
-    "ar": "نص placeholder: اشرح مراحل عملك، من الفكرة إلى التنفيذ.",
-    "en": "Placeholder: describe your process, from the idea to the finished piece."
+    "ar": "أبدأ بفهم الهدف من الموقع، ثم أصمم تجربة بسيطة تركز على المحتوى، وأنفذها بتقنيات حديثة مثل React وNext.js، مع الاهتمام بالأداء وإمكانية الوصول.",
+    "en": "I start by understanding the goal of the site, then design a simple experience that puts content first, and build it with modern tools such as React and Next.js, with care for performance and accessibility."
   }
 }

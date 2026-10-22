@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import type { Locale } from '@/types/furniture';
-import { SITE_NAME } from '@/lib/site';
+import Logo from './Logo';
 import LanguageSwitch from './LanguageSwitch';
 
 export default function Navbar({ locale, dict }: { locale: Locale; dict: Record<string, string> }) {
@@ -20,8 +20,8 @@ export default function Navbar({ locale, dict }: { locale: Locale; dict: Record<
   return (
     <header className="border-b border-border bg-background">
       <div className="mx-auto flex max-w-[1200px] items-center justify-between gap-4 px-4 py-4">
-        <Link href={`/${locale}`} className="font-semibold">
-          {SITE_NAME}
+        <Link href={`/${locale}`} aria-label={`${dict['nav.home']}`}>
+          <Logo />
         </Link>
 
         <nav className="hidden items-center gap-6 md:flex">

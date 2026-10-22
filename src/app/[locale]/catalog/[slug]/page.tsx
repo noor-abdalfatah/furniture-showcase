@@ -1,4 +1,6 @@
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 import type { Locale } from '@/types/furniture';
 import { getAllProducts, getProductBySlug } from '@/lib/products';
 import { getDictionary, pickText } from '@/lib/i18n';
@@ -28,6 +30,16 @@ export default async function ProductPage({
   const name = pickText(product.name, locale);
 
   return (
+    <>
+    <div className="mx-auto max-w-[1200px] px-4 pt-8">
+      <Link
+        href={`/${locale}/catalog`}
+        className="inline-flex items-center gap-2 text-sm text-text-muted transition-colors duration-150 hover:text-accent"
+      >
+        <ArrowLeft size={16} strokeWidth={1.5} className="rtl:rotate-180" />
+        {dict['product.back']}
+      </Link>
+    </div>
     <article className="mx-auto grid max-w-[1200px] gap-10 px-4 py-10 md:grid-cols-2">
       <Gallery images={product.images} alt={name} />
       <div className="flex flex-col gap-6">
@@ -51,5 +63,6 @@ export default async function ProductPage({
         </div>
       </div>
     </article>
+    </>
   );
 }

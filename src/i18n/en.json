@@ -28,5 +28,11 @@
   "install.dismiss": "Not now",
   "offline.title": "You are offline",
   "offline.body": "This page is not saved yet. Browse the catalog you already opened.",
-  "notFound.title": "Page not found"
+  "notFound.title": "Page not found",
+  "product.back": "Back to catalog",
+  "contact.email": "Email",
+  "contact.whatsapp": "WhatsApp",
+  "contact.follow": "Follow",
+  "contact.instagram": "Instagram",
+  "contact.facebook": "Facebook"
 }

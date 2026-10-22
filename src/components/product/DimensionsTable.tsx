@@ -21,7 +21,7 @@ export default function DimensionsTable({
         {rows.map(([label, value]) => (
           <tr key={label} className="border-b border-border">
             <th scope="row" className="py-2 text-start font-normal text-text-muted">{label}</th>
-            <td className="py-2 text-end">{value}</td>
+            <td className="py-2 text-end"><span dir="ltr">{value}</span></td>
           </tr>
         ))}
       </tbody>

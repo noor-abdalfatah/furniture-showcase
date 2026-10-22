@@ -28,5 +28,11 @@
   "install.dismiss": "ليس الآن",
   "offline.title": "أنت غير متصل",
   "offline.body": "هذه الصفحة غير محفوظة بعد. تصفح الكتالوج الذي فتحته سابقاً.",
-  "notFound.title": "الصفحة غير موجودة"
+  "notFound.title": "الصفحة غير موجودة",
+  "product.back": "العودة إلى الكتالوج",
+  "contact.email": "البريد الإلكتروني",
+  "contact.whatsapp": "واتساب",
+  "contact.follow": "تابعني",
+  "contact.instagram": "إنستغرام",
+  "contact.facebook": "فيسبوك"
 }

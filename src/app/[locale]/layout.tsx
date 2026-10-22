@@ -7,6 +7,7 @@ import { fontArabic, fontLatin } from '@/lib/fonts';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ServiceWorkerRegister from '@/components/pwa/ServiceWorkerRegister';
+import InstallPrompt from '@/components/pwa/InstallPrompt';
 import { SITE_NAME } from '@/lib/site';
 
 export const metadata: Metadata = {
@@ -47,6 +48,7 @@ export default async function LocaleLayout({
         <main className="flex-1">{children}</main>
         <Footer locale={locale} dict={dict} />
         <ServiceWorkerRegister />
+        <InstallPrompt dict={dict} />
       </body>
     </html>
   );

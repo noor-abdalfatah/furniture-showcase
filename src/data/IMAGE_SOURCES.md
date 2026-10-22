@@ -1,5 +1,7 @@
 # Image sources
 
-Photos come from Pexels (free license). Credits are in `src/data/image-credits.json`, written by `npm run images:fetch`.
+All photos are from Pexels under the Pexels License (free for commercial use).
+Each entry, with its Pexels link, is listed in `src/data/image-credits.json`.
+Photographer names are not recorded; the Pexels link shows them.
 
-Placeholder images (generated locally) are used until you run the fetch script with a Pexels API key.
+Swatch images are solid color tiles, not photos.

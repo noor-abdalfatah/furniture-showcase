@@ -2,6 +2,9 @@ import Link from 'next/link';
 import type { Locale } from '@/types/furniture';
 import { getDictionary } from '@/lib/i18n';
 
+// Locale is read from params; block navigation until it resolves (static per locale).
+export const instant = false;
+
 export default async function OfflinePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;

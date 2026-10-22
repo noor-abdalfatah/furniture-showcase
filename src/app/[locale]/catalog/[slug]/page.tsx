@@ -7,6 +7,9 @@ import MaterialSwatches from '@/components/product/MaterialSwatches';
 import DimensionsTable from '@/components/product/DimensionsTable';
 import WhatsAppButton from '@/components/product/WhatsAppButton';
 
+// Locale is read from params; block navigation until it resolves (static per locale).
+export const instant = false;
+
 export function generateStaticParams() {
   return getAllProducts().map((p) => ({ slug: p.slug }));
 }

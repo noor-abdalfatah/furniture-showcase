@@ -2,6 +2,9 @@ import type { Locale } from '@/types/furniture';
 import { pickText } from '@/lib/i18n';
 import aboutData from '@/data/about.json';
 
+// Locale is read from params; block navigation until it resolves (static per locale).
+export const instant = false;
+
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale: raw } = await params;
   const locale = raw as Locale;

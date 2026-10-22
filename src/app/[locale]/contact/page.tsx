@@ -2,6 +2,9 @@ import type { Locale } from '@/types/furniture';
 import { getDictionary } from '@/lib/i18n';
 import { buildWhatsAppMessageUrl, getWhatsAppNumber } from '@/lib/whatsapp';
 
+// Locale is read from params; block navigation until it resolves (static per locale).
+export const instant = false;
+
 const GENERIC_MESSAGE: Record<Locale, string> = {
   ar: 'مرحباً، أريد الاستفسار عن أعمالك.',
   en: 'Hello, I would like to ask about your work.',
